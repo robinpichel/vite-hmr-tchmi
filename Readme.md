@@ -1,4 +1,4 @@
-# tchmi-vite-hmr
+# vite-hmr-tchmi
 
 A utility library to enable Hot Module Replacement (HMR) for Beckhoff TwinCAT HMI (TcHmi) Framework Controls when using Vite.
 
@@ -23,7 +23,7 @@ This package provides the necessary logic to hot-reload TcHmi Controls without r
 ## Installation
 
 ```bash
-npm install tchmi-vite-hmr --save-dev
+npm install vite-hmr-tchmi --save-dev
 ```
 
 ---
@@ -32,7 +32,7 @@ npm install tchmi-vite-hmr --save-dev
 
 In your TcHmi Control script file, import the handler and call it within the Vite HMR lifecycle:
 ```ts
-import { handleTcHmiHmr } from 'tchmi-vite-hmr';
+import { handleTcHmiHmr } from 'vite-hmr-tchmi';
 
 // ... Your Control Class Definition ...
 export class MyCustomControl extends TcHmi.Controls.System.TcHmiControl {
