@@ -1,0 +1,33 @@
+{
+  "name": "vite-hmr-tchmi",
+  "private": false,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc && vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robinpichel/vite-preset-tchmi.git"
+  },
+  "keywords": [
+    "beckhoff",
+    "twincat",
+    "tchmi",
+    "vite",
+    "hmr"
+  ],
+  "author": "Robin Pichel",
+  "license": "MIT",
+  "peerDependencies": {
+    "vite": "^6.0.0 || ^7.0.0"
+  },
+  "devDependencies": {
+    "typescript": "~5.9.3",
+    "vite": "npm:rolldown-vite@7.2.5"
+  },
+  "overrides": {
+    "vite": "npm:rolldown-vite@7.2.5"
+  }
+}
