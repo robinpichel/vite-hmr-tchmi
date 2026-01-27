@@ -45,10 +45,6 @@ if (import.meta.hot) import.meta.hot.accept((newModule) => handleTcHmiHmr(newMod
 
 ---
 
-Hier ist der restliche Teil der README ab How it works im Markdown-Format zum Kopieren:
-
-Markdown
-
 ## How it works
 
 When a file change is detected, Vite provides the updated module. The `handleTcHmiHmr` function:
