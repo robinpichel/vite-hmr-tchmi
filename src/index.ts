@@ -7,6 +7,7 @@ function isClassExtending(targetClass: any, baseClass: any) {
     while (current !== null && current !== undefined) {
         if (current === baseClass) return true;
         if (current.name === baseName) return true;
+        if (current.constructor.name === baseName) return true;
 
         current = Object.getPrototypeOf(current);
     }
