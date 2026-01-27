@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/robinpichel/vite-preset-tchmi.git"
+    "url": "git+https://github.com/robinpichel/vite-hmr-tchmi.git"
   },
   "keywords": [
     "beckhoff",
