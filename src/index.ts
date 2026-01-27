@@ -6,7 +6,7 @@ function isClassExtending(targetClass: any, baseClass: any) {
     let current = targetClass;
     while (current !== null && current !== undefined) {
         if (current === baseClass) return true;
-        if (current.constructor.name === baseName) return true;
+        if (current.name === baseName) return true;
 
         current = Object.getPrototypeOf(current);
     }
@@ -18,7 +18,7 @@ export function handleTcHmiHmr(newModule: any) {
     if (!newModule) return;
 
     for (const [_, newModuleElement] of Object.entries(newModule)) {
-        if (!(isClassExtending(newModuleElement, "TcHmi.Controls.System.TcHmiControl"))) continue;
+        if (!(isClassExtending(newModuleElement, "TcHmiControl"))) continue;
         const newControl = newModuleElement as any;
 
         const instances = Array.from((window as any).TcHmi.Controls.getMap())
